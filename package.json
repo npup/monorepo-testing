@@ -1,0 +1,22 @@
+{
+    "name": "monorepo-with-testing",
+    "type": "module",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "workspaces": [
+        "lib",
+        "app"
+    ],
+    "scripts": {
+        "lib:build": "npm --workspace=lib run build",
+        "lib:test": "npm --workspace=lib run test",
+        "app:test": "npm --workspace=app run test",
+        "app:build": "npm --workspace=app run build",
+        "app:start": "npm --workspace=app run start",
+        "test": "npm --workspaces run test"
+    }
+}

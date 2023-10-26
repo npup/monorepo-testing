@@ -1,0 +1,35 @@
+{
+    "name": "ts-react-jest",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/preset-env": "^7.23.2",
+        "@babel/preset-react": "^7.22.15",
+        "@babel/preset-typescript": "^7.23.2",
+        "@testing-library/jest-dom": "^6.1.4",
+        "@testing-library/react": "^14.0.0",
+        "@types/jest": "^29.5.6",
+        "@types/react": "^18.2.31",
+        "@types/react-dom": "^18.2.14",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0",
+        "parcel": "^2.10.1",
+        "process": "^0.11.10",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "css-to-go": "^1.7.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "scripts": {
+        "pretest": "echo Running script test@app",
+        "test": "jest --verbose",
+        "build": "parcel build ./index.html",
+        "start": "parcel serve --port 3001 ./index.html"
+    }
+}
